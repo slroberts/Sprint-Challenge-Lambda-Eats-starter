@@ -212,8 +212,8 @@ const PizzaForm = () => {
                 <input
                   type="checkbox"
                   name={topping}
-                  onChange={handleChange}
                   data-cy={topping}
+                  // checked={}
                 />
                 {topping}
               </label>
@@ -228,7 +228,7 @@ const PizzaForm = () => {
             type="checkbox"
             name="glutenSubstitute"
             data-cy="glutenSubstitute"
-            onChange={handleChange}
+            checked={pizzaFormState.glutenSubstitute}
             value={pizzaFormState.glutenSubstitute}
           />
           Gluten Free Crust (+ $1.00)
